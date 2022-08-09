@@ -2,11 +2,15 @@
     --fonte-principal: 'Ubuntu', sans-serif;
     --fonte-secundaria: 'Roboto', sans-serif;
     --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/lua.png");
-    --bg-color: black;
+    --bg-color: rgb(17, 16, 16);
+    --bg-position: left;
     --fonte-color: white;
+    --cor-sombra: none
 }
 
 .light-mode {
+    --bg-position: right;
+    --cor-sombra: rgb(20, 20, 43);
     --bg-color: white;
     --fonte-color: black;
     --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/sol.png")
@@ -19,31 +23,12 @@ body {
 
 .cabecalho {
     background-image: linear-gradient(45deg, rgb(0, 2, 133), rgb(255, 0, 0));
+    background-position: var(--bg-position);
     display: flex;
     justify-content: center;
     align-items: center;
     background-size: 200%;
-    animation: cabecalho-escuro 4s infinite alternate-reverse;
-}
-
-/* @keyframes cabecalho-claro {
-    0% {
-        background-position: right;
-    }
-
-    100% {
-        background-position: left;
-    }
-} */
-
-@keyframes cabecalho-escuro {
-    0% {
-        background-position: left;
-    }
-
-    100% {
-        background-position: right;
-    }
+    transition: 1.6s;
 }
 
 .cabecalho-logo {
@@ -64,7 +49,7 @@ body {
 }
 
 .alterar-tema:active {
-    transform: scale(0.8);
+    transform: scale(0.85);
 }
 
 #btn {
@@ -72,55 +57,87 @@ body {
 }
 
 .sobre {
-    height: 750px;
     display: flex;
+    height: 900px;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
+.conteudo-sobre {
+    height: 450px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    margin: 0 15px;
+    /* background-color: red; */
+}
+
 .frente-escola {
-    box-shadow: 8px 8px 15px rgb(20, 20, 43);
+    margin-top: 25px;
+    box-shadow: 8px 8px 15px var(--cor-sombra);
     height: 325px;
 }
 
 .titulo-principal {
     color: var(--fonte-color);
-    font-size: 30px;
+    margin-bottom: 20px;
+    font-size: 35px;
     font-family: var(--fonte-principal);
     font-weight: 700;
 }
 
 .texto-principal {
+    margin-bottom: 20px;
     font-family: var(--fonte-secundaria);
-    margin: 0 15px;
-    text-align: center;
+    text-align: left;
     font-size: 20px;
     color: var(--fonte-color);
 }
 
 @media screen and (min-width: 900px) {
+
     .sobre {
-        display: inline-block;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: flex-start;
     }
 
     .frente-escola {
-        float: left;
         margin-left: 25px;
         margin-top: 25px;
         height: 400px;
     }
 
-    .titulo-principal,
-    .texto-principal {
-        display: block;
+    .conteudo-sobre {
+        /* height: 260px; */
+        display: flex;
         text-align: center;
     }
 
-    .texto-principal {
-        text-align: left;
-        margin-left: 400px;
-        font-size: 24px;
+
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        margin: 0 auto;
+        width: 75%;
     }
 
+
+    .sobre {
+        justify-content: space-around;
+        height: 500px;
+        align-items: center;
+    }
+
+    .conteudo-sobre {
+        justify-content: space-around;
+        align-items: center;
+        height: 325px;
+        margin: 0 auto;
+        width: 40%;
+    }
 }
