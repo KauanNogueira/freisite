@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,32 +18,79 @@
 
 <body>
     <header class="cabecalho">
-        <img src="logofrei.png" alt="" class="cabecalho-logo">
+        <img src="img/logofrei.png" alt="" class="logo">
         <input type="button" id="btn" onclick="">
         <label for="btn" class="alterar-tema"></label>
 
     </header>
 
     <main class="principal">
-        <section class="sobre">
-            <img src="frente-escola.jpg" alt="" class="frente-escola">
-            <section class="conteudo-sobre">
+        <section class="sobre secao_imagem-esquerda">
+            <img src="img/frente-escola.jpg" alt="" class="frente-escola imagem">
+            <div class="conteudo">
                 <h1 class="titulo-principal"> Sua História</h1>
                 <p class="texto-principal">Fundada em 1982 no governo do prefeito Virgílio Galassi, e hoje sendo
                     considerada uma das escolas mais renomadas de Uberlândia, a Escola Estadual Frei Egídio
                     Parisi completará 40 anos em 28/08/2022.</p>
                 <p class="texto-principal"> Passou a ter o nome Frei Egidio Parisi apenas em 1983,
                     pois antes era anexa à Escola Estadual Sérgio de Freitas Pacheco, e tendo a denominação de Escola
-                    Estadual do Conjunto Segismundo Pereira, depois dessa data a escola se desmembrou da outra. Porém,
+                    Estadual do Conjunto Segismundo Pereira, depois desta data a escola se desmembrou da outra. Porém,
                     só em 1996 a escola começou a funcionar em prédio própio no atual endereço, na Av. Dr. Laerte Vieira
                     Gonçalves, nº 2926, Bairro Segismundo Pereira, na cidade de Uberlândia-MG, oferecendo ensino
                     fundamenteal e médio.</p>
-            </section>
+                <p class="texto-principal">O auge da escola foi sem dúvidas em 2019, quando a escola passou a ser
+                    considerada uma das melhores instituições de ensino de Uberlândia e do estado de Minas Gerais. Já
+                    um dos seus piores momentos foi no ano seguinte, em 2020, no qual começa a pandemia, já que agora a
+                    escola teria de lidar com o ensino remoto, assim como em várias escolas o ensino começa a ficar
+                    confuso durante certo período de tempo, pela falta de informação de alunos e de professores que
+                    nunca imaginariam uma situação como essa.
+                    Para Roberta, professora de história a bastante tempo na escola, um dos melhores momentos da escola
+                    foi em 2014, quando ocorreu uma gincana sobre ditadura militar no turno da tarde.</p>
+            </div>
 
         </section>
 
+        <section class="sobre-padre secao_imagem-direita">
+            <img src="img/padre-frei.png" alt="" class="padre-frei imagem">
+            <div class="conteudo">
+                <h1 class="titulo-principal">O Padre Frei Egídio</h1>
+                <p class="texto-principal">O Pe. Frei Egídio Parisi nasceu em montezano sulla marcellana, na província
+                    de salemo (Itália), aos 05/07/1909, filho de uma família de sentimentos profundamente cristãos. Com
+                    15 anos de idade, na data de 17/07/1924 entrou na Ordem Franciscana, na província
+                    Salernitano-Lucana, onde em 21/07/1925 emitiu os votos temporários e, terminado os estudos com 23
+                    anos foi ordenado sacerdote. No dia 28 de Julho de 1953, chefiando uma caravana de cinco jovens
+                    Sacerdotes Francisacanos, deixou sua terra natal a bordo do navio "Conte Grande";</p>
+                <p class="texto-principal"> Após 15 dias de
+                    viagem, desembarcou com seus companheiros no porto de Santos, rumo ao Triângulo Mineiro</p>
+                <p class="texto-principal">O Padre morreu aos quase 72 anos, no dia 12/01/1981 por causa de uma doença
+                    que já o minava. Tendo passado por cidades como Araguari, Uberlândia, Monte Alegre, Canápolis,
+                    Capinópolis, Cachoeira Dourada e Uberaba, guiando e dando conselhos espirituais a muitos que o
+                    recorriam, deixou seu legado não só na cidade que mais amou, mas em todas as terras que passou. O
+                    prefeito Virgílio Galassi decretou luto municipal por 3 dias, e já pensava em trazer os restos
+                    mortais para Uberlândia, para sepúlta-los na Capela Funerária, que ele mesmo construira e onde
+                    reservara para si um jazido
+                </p>
+            </div>
+        </section>
+
+        <div class="depoimento">
+            <h1 class="titulo-principal">Depoimento do grupo</h1>
+            <p class="texto-principal">Estamos na escola a bem pouco tempo, algo em torno de 6 ou 7 meses, já vai dar um
+                ano, porém sabemos que ainda tem muito a vir, e que a escola nomeada uma das melhores de minas não
+                fracassa no quesito ensino, sempre rígida perante às datas de entregas de atividades, não é desleixada
+                como algumas outras instituições de ensino espalhadas por Uberlandia ou pelo Brasil inteiro. Ficamos
+                felizes de estarmos nessa comunidade.</p>
+            <p class="texto-principal">O site foi criado na intenção apenas de informar algumas curiosidades básicas aos
+                estudantes, e também como forma de comemorar o aniversário de 40 anos da nossa escola, esperamos que
+                tenham gostado do resultado, acho que a parte mais dificil foi resumir a biografia do padre, pois
+                apresentava um português mais antigo</p>
+        </div>
+
     </main>
-    <script src="script.js"></script>
+    <footer class="rodape">
+        <img src="img/logofrei.png" alt="" class="logo">
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
